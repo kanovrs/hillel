@@ -1,0 +1,104 @@
+.clients {
+    padding-top: 64px;
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 29px;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        margin: 0 -30px;
+    }
+
+    &__article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120px;
+
+        &:nth-child(1) {
+            background-color: rgba(28, 66, 128, 1);
+        }
+
+        &:nth-child(2) {
+            background-color: rgba(20, 54, 70, 1);
+        }
+
+        &:nth-child(3) {
+            background-color: rgba(253, 147, 57, 1);
+        }
+
+        &:nth-child(4) {
+            background-color: rgba(158, 77, 195, 1);
+        }
+
+        &:nth-child(5) {
+            background-color: rgba(253, 147, 57, 1);
+        }
+
+        &:nth-child(6) {
+            background-color: rgba(226, 226, 228, 1);
+        }
+
+        &:nth-child(7) {
+            background-color: rgba(199, 28, 54, 1);
+        }
+
+        &:nth-child(8) {
+            background-color: rgba(220, 243, 249, 1);
+        }
+
+        &:nth-child(9) {
+            background-color: rgba(234, 234, 234, 1);
+        }
+
+        &:nth-child(10) {
+            background-color: rgba(40, 34, 64, 1);
+        }
+
+        &:nth-child(11) {
+            background-color: rgba(29, 69, 104, 1);
+        }
+
+        &:nth-child(12) {
+            background-color: rgba(0, 0, 0, 1);
+        }
+
+        &:nth-child(n + 7):nth-child(-n + 12) {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .clients {
+        &__box {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin: 0 -60px;
+        }
+
+        &__article {
+            width: 33.33%;
+            &:nth-child(n + 7):nth-child(-n + 12) {
+                display: flex;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .clients {
+        padding-top: 60px;
+        &__article {
+            width: 25%;
+        }
+    }
+}

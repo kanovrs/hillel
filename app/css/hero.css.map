@@ -1,0 +1,1 @@
+{"version":3,"sources":["hero.scss","hero.css"],"names":[],"mappings":"AAAA;EACI,qBAAA;ACCJ","file":"hero.css","sourcesContent":[".hero {\n    padding: 129px 0 60px;\n}\n",".hero {\n  padding: 129px 0 60px;\n}"]}

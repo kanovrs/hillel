@@ -1,0 +1,52 @@
+.photo-team {
+    margin-top: 3px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+
+    &__title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $white;
+        text-align: center;
+        text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 13px;
+        text-transform: uppercase;
+        opacity: 0.8;
+        margin-left: 6px;
+    }
+
+    & img {
+        background-color: $gray-separator;
+    }
+}
+
+@media (min-width: 768px) {
+    .photo-team {
+        &__title {
+            font-size: 46px;
+            letter-spacing: 63px;
+            margin-left: 31px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .photo-team {
+        &__title {
+            font-size: 86px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .photo-team {
+        &__title {
+            font-size: 96px;
+        }
+    }
+}

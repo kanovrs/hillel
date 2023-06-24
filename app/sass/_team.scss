@@ -1,0 +1,119 @@
+.team {
+    padding-top: 50px;
+
+    &__photo {
+        display: block;
+        height: 500px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 12px 12px 0px 0px;
+    }
+
+    &__aside {
+        padding: 30px;
+        background: $gray-bg;
+        border-radius: 0 0 12px 12px;
+    }
+
+    &__link {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $active;
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 30px;
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 6px;
+        color: $gray-txt;
+    }
+
+    &__position {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: $gray-txt;
+    }
+
+    &__circle-box {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__circle {
+        width: 16px;
+        height: 16px;
+        background-color: $active;
+        border-radius: 50%;
+        opacity: 0.2;
+        cursor: pointer;
+        border: none;
+
+        &--active {
+            opacity: 1;
+        }
+
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .team {
+        padding-top: 80px;
+
+        &__title {
+            font-size: 38px;
+            line-height: 46px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .team {
+        &__article {
+            display: flex;
+        }
+
+        &__photo {
+            height: auto;
+            width: 400px;
+            object-fit: cover;
+            border-radius: 12px 0px 0px 12px;
+        }
+
+        &__link {
+            &:hover,
+            &:hover svg path {
+                color: $accent;
+                stroke: $accent;
+                transition: all 400ms linear;
+            }
+
+            &:hover svg {
+                transition: all 400ms linear;
+                transform: translateX(10px);
+            }
+        }
+    }
+}

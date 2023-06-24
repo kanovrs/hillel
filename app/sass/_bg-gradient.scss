@@ -1,0 +1,52 @@
+.bg-gradient {
+    background: url(../img/bg-symbol.svg) no-repeat center top,
+        linear-gradient(
+            228.57deg,
+            #323264 11.93%,
+            #323264 57.17%,
+            #643e72 87.46%
+        );
+    border-radius: 0 0 12px 12px;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.bg-gradient::after {
+    content: "";
+    height: 10px;
+    background: #cacadb;
+    border-radius: 0 0 12px 12px;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: -10px;
+}
+
+.bg-gradient::before {
+    content: "";
+    height: 10px;
+    background: #e7e7f2;
+    border-radius: 0 0 12px 12px;
+    position: absolute;
+    left: 40px;
+    right: 40px;
+    bottom: -20px;
+}
+
+@media (min-width: 768px) {
+    .bg-gradient {
+        background-size: 893px 1024px, cover;
+    }
+}
+
+@media (min-width: 992px) {
+    .bg-gradient {
+        background-size: 670px 768px, cover;
+    }
+}
+
+@media (min-width: 1201px) {
+    .bg-gradient {
+        background-size: 697px 799px, cover;
+    }
+}
